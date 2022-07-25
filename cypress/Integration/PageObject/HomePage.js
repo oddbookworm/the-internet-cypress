@@ -1,8 +1,7 @@
 class HomePage {
 
   visitHome () {
-    let basePath = '/'
-    cy.visit(basePath)
+    cy.visit('/')
   }
 
 }
