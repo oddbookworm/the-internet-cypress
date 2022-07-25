@@ -2,26 +2,26 @@ import HomePage from "./HomePage";
 
 class addRemovePage extends HomePage {
 
-    visitPage () {
-        let base = this.visitHome();
-        let relative = "/add_remove_elements/";
-        
-        cy.visit(base + relative);
-
-        return cy.contains("Add/Remove Elements");
-    }
+  visitPage () {
+    this.visitHome();
+    let relative = "/add_remove_elements/";
     
-    addElement () {
-        cy.contains('Add Element').click();
+    cy.visit(relative);
 
-        return cy.contains("Delete");
-    }
+    return cy.contains("Add/Remove Elements");
+  }
+  
+  addElement () {
+    cy.contains('Add Element').click();
 
-    deleteElement() {
-        cy.contains('Delete').click();
+    return cy.contains("Delete");
+  }
 
-        return cy.contains("Delete")
-    }
+  deleteElement() {
+    cy.contains('Delete').click();
+
+    return cy.contains("Delete")
+  }
 
 }
 
