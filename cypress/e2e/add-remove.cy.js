@@ -2,11 +2,11 @@ import addRemovePage from "../Integration/PageObject/add-remove";
 
 const page = new addRemovePage
 
-describe ('Test', () => {
+describe ('Add/Remove Page Testing', () => {
 
   // base page should be visited
   // assert that the header content of the page exists
-  it ('Visit the base page', () => {
+  it ('Visit the page', () => {
     let header = page.visitPage();
     header.should("exist");
   })
