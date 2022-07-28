@@ -17,7 +17,7 @@ describe('Basic Auth page testing correct credentials', () => {
             auth: creds
         }
 
-        let request = page.visitPageModified(creds);
+        let request = page.visitPageModified(options);
         request.then((response) => {
             if (response.isOkStatusCode) {
                 cy.visit(options);
@@ -43,7 +43,7 @@ describe('Basic Auth page testing correct credentials', () => {
             auth: creds
         }
 
-        let request = page.visitPageModified(creds);
+        let request = page.visitPageModified(options);
         request.then((response) => {
             if (response.isOkStatusCode) {
                 cy.visit(options);

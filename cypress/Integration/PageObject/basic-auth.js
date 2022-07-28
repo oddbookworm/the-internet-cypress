@@ -6,7 +6,8 @@ class BasicAuthPage extends HomePage {
       visitPageModified (options) {
         this.visitHome();
 
-		options.failOnStatusCode = false;
+        options.failOnStatusCode = false;
+        console.log(options);
 
         return cy.request(options);
       }
