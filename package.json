@@ -1,0 +1,17 @@
+{
+  "name": "the-internet-cypress",
+  "version": "1.0.0",
+  "description": "Cypress testing of https://the-internet.herokuapp.com/",
+  "main": "index.js",
+  "scripts": {
+    "cypress:open": "cypress open"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cypress": "^10.3.1"
+  },
+  "devDependencies": {
+    "@shelex/cypress-allure-plugin": "^2.28.0"
+  }
+}
