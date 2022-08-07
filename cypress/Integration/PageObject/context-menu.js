@@ -4,15 +4,12 @@ class ContextMenu extends HomePage {
 
     visitPage () {
         this.visitHome();
-        let relative = '/context_menu';
-
-        cy.visit(relative);
+        
+        cy.visit('/context_menu');
     }
 
     getBox () {
-        let box = cy.get('[id="hot-spot"]');
-
-        return box;
+        return box = cy.get('[id="hot-spot"]');
     }
 
 }
