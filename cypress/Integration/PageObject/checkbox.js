@@ -10,9 +10,7 @@ class CheckBox extends HomePage {
     }
 
     getBox (index) {
-        let box = cy.get('[type="checkbox"]').eq(index);
-
-        return box;
+        return cy.get('[type="checkbox"]').eq(index);
     }
 
 }

@@ -7,7 +7,6 @@ class BasicAuthPage extends HomePage {
         this.visitHome();
 
         options.failOnStatusCode = false;
-        console.log(options);
 
         return cy.request(options);
       }
