@@ -9,7 +9,7 @@ class ContextMenu extends HomePage {
     }
 
     getBox () {
-        return box = cy.get('[id="hot-spot"]');
+        return cy.get('[id="hot-spot"]');
     }
 
 }
